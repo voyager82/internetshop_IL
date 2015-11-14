@@ -3,6 +3,28 @@
 <%@ page import="internetshop.niva.il.domain.TV" %>
 <%@ page import="java.util.List" %>
 <%@ page import="internetshop.niva.il.database.TVDAO" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:include page="Header.jsp"></jsp:include>
+<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+      crossorigin="anonymous">
+<!-- Optional theme-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+      integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles/bootstrap.min.css" >
+<link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+
+
+<jsp:useBean id="tv_hometheater" class="internetshop.niva.il.database.jdbc.TVDAOImpl" scope="request"/>
+
+
 <%--
   Created by IntelliJ IDEA.
   User: voyager
@@ -11,28 +33,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <br>
-<head>
-  <jsp:useBean id="tv_hometheater" class="internetshop.niva.il.database.jdbc.TVDAOImpl" scope="request"/>
-  <title>Menu</title>
-  <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-  <link rel="stylesheet" href="styles/fly_outMenu_vert.css" type="text/css" />
-  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-</head>
-<script language="JavaScript">
-  var a = 10;
-  function nextPage() {
-    location.href = 'TV.jsp?x=' + a + ''
-  }
-</script>
 
-<script>
-  function uhdtv() {
-    // document.getElementById("4045id").style.color = 'red'
-    document.getElementById("4045id")
-  }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+</head>
+
+
 <%
   TVDAOImpl tvdaoimpl = new TVDAOImpl();
 
@@ -46,13 +54,34 @@
   if(parameter == null ) {
     parameter="TV & Home Theater : ";
     session.setAttribute("parameter", parameter);
-
   }
 %>
 <body>
-<!--<%=session.getId()%>  -->
-  <ul id="navmenu-v">
+<!--
+  <div class="search-bar" role="search">
+    <form action="#" name="frmSearch" method="GET">
+      <label for="gh-search-input"></label>
+      <input autocomplete="off" class="autocomplete-enabled" value="" name="st" maxlength="90" placeholder="" id="gh-search-input" type="text">
+      <div id="autocompleteContainer"></div>
 
+      <button type="submit" class="search-button" title="Search" value="Search">
+        <span class="header-icon-search" aria-hidden="true">
+        </span>
+      </button>
+      <input value="" name="sp" type="hidden">
+-->
+
+      </form>
+    </div>
+  </div>
+</div>
+<div class="separotor">
+  <ul>
+
+  </ul>
+</div>
+<div id="main-menu">
+  <ul id="navmenu-v">
   <li><a href="#">TV & Home Theater</a>
      <ul>
         <li><a href="#">4K Ultra HD TVs</a>
@@ -517,9 +546,10 @@
     </ul>
   </li>
 </ul>
+</div>
+</div>
 
-
-
-
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

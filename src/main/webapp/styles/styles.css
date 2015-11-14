@@ -1,0 +1,218 @@
+/*Header Style*/
+
+
+.cart-wrap {
+    width: 5.045%;
+    float: left;
+    padding: 15px 0px;
+    height: 64px;
+    position: relative;
+}
+
+.header-icon-cart {
+    width: 64px;
+    height: 64px;
+    font-size: 26px;
+    display: inline-block;
+    color: #FFF;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+[class^="header-icon-"],
+[class*=" header-icon-"],
+[class^="footer-icon-"],
+[class*=" footer-icon-"] {
+    font-family: "headerIcons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #080808;
+}
+#form.login {
+    border: 1px solid red;
+}
+
+#form.login input,#navbar-form.right{
+    height: auto;
+    width: 140px;
+    background: #F5F5F5;
+    border-radius: 10px;
+
+}
+
+
+#navigation, #navigation ul, #navigation li, ul#nav  {
+    margin: 0;
+    padding: 0;
+}
+#navigation, #navigation ul, #navbar-default {
+    background: rgb(46,95,122);
+}
+#navigation {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+#navigation ul {
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+#navigation li:hover ul {
+    display: block;
+}
+#navigation li {
+    display: table-cell;
+    text-align: center;
+    font: bold 1.4em Verdana, Arial, Helvetica, sans-serif;
+}
+#navigation ul li {
+    display: block;
+    text-align: left;
+}
+#navigation .right {
+    direction: rtl;
+}
+#navigation .right ul {
+    right: 0;
+}
+#navigation .right li {
+    direction: ltr;
+}
+#navigation a {
+    display: block;
+    padding: 3px 0;
+    color: #fff;
+    text-decoration: none;
+}
+#navigation ul a {
+    padding: 3px 15px;
+}
+#navigation li:hover {
+    background: rgb(96,145,172);
+}
+
+/*Separator style*/
+ul#spr {
+    height: 10%;
+}
+#spr.cart-wrap {
+    width: 5.045%;
+    float: left;
+    padding: 15px 0px;
+    height: 64px;
+    position: relative;
+}
+/*Main menu style */
+ul#navmenu-v,
+ul#navmenu-v li,
+ul#navmenu-v ul {
+    margin: 0;
+    border: 0 none;
+    padding: 0px;
+    width: 350px;
+    list-style: none;
+}
+ul#navmenu-v:after {
+    clear: both;
+    display: block;
+    font: 1px/0px serif;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+}
+ul#navmenu-v li {
+    float: left;
+    display: block !important;
+    display: inline;
+    position: relative;
+}
+ul#navmenu-v a {
+    border: 1px solid #FFF;
+    border-right-color: #527337;
+    border-bottom-color: #527337;
+    padding: 0 6px;
+    display: block;
+    background: #2E5F7A;
+    color: #FFF;
+    font:  bold 1.4em Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    height: auto !important;
+    height: 1%;
+}
+ul#navmenu-v a:hover,
+ul#navmenu-v li:hover a,
+ul#navmenu-v li.iehover a {
+    background: #d6b3a6;
+    color: #FFF;
+}
+ul#navmenu-v li:hover li a,
+ul#navmenu-v li.iehover li a {
+    background: #2E5F7A;
+    color: #FFF;
+}
+ul#navmenu-v li:hover li a:hover,
+ul#navmenu-v li:hover li:hover a,
+ul#navmenu-v li.iehover li a:hover,
+ul#navmenu-v li.iehover li.iehover a {
+    background: #d6b3a6;
+    color: #FFF;
+}
+ul#navmenu-v li:hover li:hover li a,
+ul#navmenu-v li.iehover li.iehover li a {
+    background: #2E5F7A;
+    color: #FFF;
+}
+ul#navmenu-v li:hover li:hover li a:hover,
+ul#navmenu-v li:hover li:hover li:hover a,
+ul#navmenu-v li.iehover li.iehover li a:hover,
+ul#navmenu-v li.iehover li.iehover li.iehover a {
+    background: #d6b3a6;
+    color: #FFF;
+}
+ul#navmenu-v li:hover li:hover li:hover li a,
+ul#navmenu-v li.iehover li.iehover li.iehover li a {
+    background: #FF9f00;
+    color: #BCD6A7;
+}
+ul#navmenu-v li:hover li:hover li:hover li a:hover,
+ul#navmenu-v li.iehover li.iehover li.iehover li a:hover {
+    background: #FF9f00;
+    color: #555;
+}
+ul#navmenu-v ul,
+ul#navmenu-v ul ul,
+ul#navmenu-v ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 350px;
+    width: auto;
+}
+ul#navmenu-v li:hover ul ul,
+ul#navmenu-v li:hover ul ul ul,
+ul#navmenu-v li.iehover ul ul,
+ul#navmenu-v li.iehover ul ul ul {
+    display: none;
+}
+ul#navmenu-v li:hover ul,
+ul#navmenu-v ul li:hover ul,
+ul#navmenu-v ul ul li:hover ul,
+ul#navmenu-v li.iehover ul,
+ul#navmenu-v ul li.iehover ul,
+ul#navmenu-v ul ul li.iehover ul {
+    display: block;
+}
+/*Styles for Cart!*/
+.media-object {
+    width: 72px;
+    height: 72px;
+}
+footer{
+    width:100%;
+    min-height:25px;
+    background-color: #2E5F7A; /* This color gets inverted color or you can add navbar inverse class in html */
+}
