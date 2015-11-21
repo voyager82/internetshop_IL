@@ -92,7 +92,7 @@
 
             <form  method="post"  action="TV.jsp" id="4kuhd1">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd1').submit();">
-             <%=request.getAttribute("model")%>
+              <%=tvdaoimpl.getByScreenSize("1").getTvscreensize()%>
               <input type="hidden" name="4kid1" value="1" />
               </a></li>
             </form>

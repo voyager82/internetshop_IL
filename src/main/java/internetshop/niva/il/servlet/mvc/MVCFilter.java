@@ -3,8 +3,9 @@ package internetshop.niva.il.servlet.mvc;
 /**
  * Created by voyager on 2015.11.03..
  */
-import com.sun.javafx.collections.MappingChange;
+
 import internetshop.niva.il.database.DBException;
+import internetshop.niva.il.servlet.mvc.controllers.*;
 import internetshop.niva.il.servlet.spring.SpringConfig;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -13,10 +14,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.awt.*;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
@@ -86,6 +84,7 @@ public class MVCFilter implements Filter {
                 e.printStackTrace();
             }
             req.setAttribute("model", model.getData());
+
             ServletContext servletContext = req.getServletContext();
             RequestDispatcher requestDispatcher = req.getRequestDispatcher(model.getViewName());
             requestDispatcher.forward(req, resp);

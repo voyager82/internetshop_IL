@@ -1,5 +1,7 @@
-package internetshop.niva.il.servlet.mvc;
+package internetshop.niva.il.servlet.mvc.controllers;
 
+import internetshop.niva.il.servlet.mvc.MVCController;
+import internetshop.niva.il.servlet.mvc.MVCModel;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
