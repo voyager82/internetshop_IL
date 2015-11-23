@@ -26,6 +26,7 @@
   <title>TV & Home Theater</title>
 </head>
 <body>
+
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span2">
@@ -62,7 +63,7 @@
         if (session.getAttribute("screenID") != null ) { %>
       <h2><%=session.getAttribute("parameter")%></h2>
 
-      <%
+      <%/*
           int ImageID;
           Connection connection = null;
           if (request.getParameter("imgID") != null ) {
@@ -79,12 +80,14 @@
               e.printStackTrace();
             }
         }
-      %>
+   */   %>
+
       <!--Retrieve only selected TV products by screen size :-->
       <c:forEach items='${tv.get4KUHD(screenID)}' var="tv">
         <h4><c:out  value="${tv.tvid} ${tv.tvtype} ${tv.tvscreensize}  ${tv.tvebrand}  ${tv.tvdescription}  ${tv.tvprice}" /><!--<img src="images/cart.png">--></h4>
         <!--Draw image :-->
-       <a href="TV.jsp?imgID=${tv.tvid}" target="_blank"> <img src ="TV.jsp?imgID=${tv.tvid}" width="115" border="0" ></a>
+        <img src ="tv?imgID=<%=request.getAttribute("model")%>" width="115" border="0" >
+      <!-- <a href="TV.jsp?imgID=${tv.tvid}" target="_blank"> <img src ="TV.jsp?imgID=${tv.tvid}" width="115" border="0" ></a> -->
         <form class="form-inline">
           <div class="checkbox">
            <!-- <label><input type="checkbox"></label> -->
@@ -99,7 +102,7 @@
           </form>
           <hr style="border-top: 1px dotted #000000 !important;" />
       </c:forEach>
-      <%=request.getAttribute("model")%>
+
      <h4> Add to Cart productId:<%=request.getParameter("btnCart")%></h4>
       <% }
       if ( request.getParameter("4kid99") != null && session.getAttribute("parameter") != null) { %>

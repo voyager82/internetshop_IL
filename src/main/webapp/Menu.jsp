@@ -90,46 +90,46 @@
         <li><a href="#">4K Ultra HD TVs</a>
           <ul id="4K-Ultra-HD">
 
-            <form  method="post"  action="TV.jsp" id="4kuhd1">
+            <form  method="post"  action="/java2/tv" id="4kuhd1">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd1').submit();">
               <%=tvdaoimpl.getByScreenSize("1").getTvscreensize()%>
               <input type="hidden" name="4kid1" value="1" />
               </a></li>
             </form>
 
-            <form  method="post" action="TV.jsp" id="4kuhd2">
+            <form  method="post" action="/java2/tv" id="4kuhd2">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd2').submit();">
               <%=tvdaoimpl.getByScreenSize("2").getTvscreensize()%>
             <input type="hidden" name="4kid2" value="2" />
             </a></li>
             </form>
 
-            <form  method="post" action="TV.jsp" id="4kuhd3">
+            <form  method="post" action="/java2/tv" id="4kuhd3">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd3').submit();">
               <%=tvdaoimpl.getByScreenSize("3").getTvscreensize()%>
               <input type="hidden" name="4kid3" value="3" /></a></li>
             </form>
 
-            <form  method="post" action="TV.jsp" id="4kuhd4">
+            <form  method="post" action="/java2/tv" id="4kuhd4">
               <li><a href="javascript:;" onclick="document.getElementById('4kuhd4').submit();">
                 <%=tvdaoimpl.getByScreenSize("4").getTvscreensize()%>
               <input type="hidden" name="4kid4" value="4" /></a></li>
             </form>
 
 
-            <form  method="post" action="TV.jsp" id="4kuhd5">
+            <form  method="post" action="/java2/tv" id="4kuhd5">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd5').submit();">
               <%=tvdaoimpl.getByScreenSize("5").getTvscreensize()%>
               <input type="hidden" name="4kid5" value="5" /></a></li>
               </form>
 
-            <form  method="post" action="TV.jsp" id="4kuhd6">
+            <form  method="post" action="/java2/tv" id="4kuhd6">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd6').submit();">
               <%=tvdaoimpl.getByScreenSize("6").getTvscreensize()%>
               <input type="hidden" name="4kid6" value="6" /></a></li>
             </form>
 
-            <form  method="post" action="TV.jsp" id="4kuhd7">
+            <form  method="post" action="/java2/tv" id="4kuhd7">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd7').submit();">
               <%=tvdaoimpl.getByScreenSize("7").getTvscreensize()%>
               <input type="hidden" name="4kid7" value="7" /></a></li>
@@ -140,61 +140,61 @@
 
        <li><a href="#">LED TVs</a>
          <ul>
-           <form  method="post"  action="TV.jsp" id="4kuhd10">
+           <form  method="post"  action="/java2/tv" id="4kuhd10">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
                <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
                <input type="hidden" name="4kid10" value="10" /></a></li>
            </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd11">
+           <form  method="post"  action="/java2/tv" id="4kuhd11">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd11').submit();">
                <%=tvdaoimpl.getByScreenSize("11").getTvscreensize()%>
                <input type="hidden" name="4kid11" value="11" /></a></li>
             </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd12">
+           <form  method="post"  action="/java2/tv" id="4kuhd12">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd12').submit();">
                <%=tvdaoimpl.getByScreenSize("12").getTvscreensize()%>
                <input type="hidden" name="4kid12" value="12" /></a></li>
             </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd13">
+           <form  method="post"  action="/java2/tv" id="4kuhd13">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd13').submit();">
                <%=tvdaoimpl.getByScreenSize("13").getTvscreensize()%>
                <input type="hidden" name="4kid13" value="13" /></a></li>
              </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd14">
+           <form  method="post"  action="/java2/tv" id="4kuhd14">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd14').submit();">
                <%=tvdaoimpl.getByScreenSize("14").getTvscreensize()%>
                <input type="hidden" name="4kid14" value="14" /></a></li>
            </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd15">
+           <form  method="post"  action="/java2/tv" id="4kuhd15">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd15').submit();">
                <%=tvdaoimpl.getByScreenSize("15").getTvscreensize()%>
                <input type="hidden" name="4kid15" value="15" /></a></li>
            </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd16">
+           <form  method="post"  action="/java2/tv" id="4kuhd16">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd16').submit();">
                <%=tvdaoimpl.getByScreenSize("16").getTvscreensize()%>
                <input type="hidden" name="4kid16" value="16" /></a></li>
            </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd17">
+           <form  method="post"  action="/java2/tv" id="4kuhd17">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd17').submit();">
                <%=tvdaoimpl.getByScreenSize("17").getTvscreensize()%>
                <input type="hidden" name="4kid17" value="17" /></a></li>
            </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd18">
+           <form  method="post"  action="/java2/tv" id="4kuhd18">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd18').submit();">
                <%=tvdaoimpl.getByScreenSize("18").getTvscreensize()%>
                <input type="hidden" name="4kid18" value="18" /></a></li>
            </form>
 
-           <form  method="post"  action="TV.jsp" id="4kuhd19">
+           <form  method="post"  action="/java2/tv" id="4kuhd19">
              <li><a href="javascript:;" onclick="document.getElementById('4kuhd19').submit();">
                <%=tvdaoimpl.getByScreenSize("19").getTvscreensize()%>
                <input type="hidden" name="4kid18" value="19" /></a></li>
@@ -203,32 +203,32 @@
        </li>
        <li><a href="#">Outdoor TVs</a>
         <ul>
-          <form  method="get"  action="TV.jsp" id="4kuhd10">
+          <form  method="get"  action="/java2/tv" id="4kuhd10">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
               <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
               <input type="hidden" name="4kid10" value="10" /></a></li>
           </form>
-          <form  method="get"  action="TV.jsp" id="4kuhd10">
+          <form  method="get"  action="/java2/tv" id="4kuhd10">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
               <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
               <input type="hidden" name="4kid10" value="10" /></a></li>
           </form>
-          <form  method="get"  action="TV.jsp" id="4kuhd10">
+          <form  method="get"  action="/java2/tv" id="4kuhd10">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
               <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
               <input type="hidden" name="4kid10" value="10" /></a></li>
           </form>
-          <form  method="get"  action="TV.jsp" id="4kuhd10">
+          <form  method="get"  action="/java2/tv" id="4kuhd10">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
               <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
               <input type="hidden" name="4kid10" value="10" /></a></li>
           </form>
-          <form  method="get"  action="TV.jsp" id="4kuhd10">
+          <form  method="get"  action="/java2/tv" id="4kuhd10">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
               <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
               <input type="hidden" name="4kid10" value="10" /></a></li>
           </form>
-          <form  method="get"  action="TV.jsp" id="4kuhd10">
+          <form  method="get"  action="/java2/tv" id="4kuhd10">
             <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
               <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
               <input type="hidden" name="4kid10" value="10" /></a></li>
@@ -237,32 +237,32 @@
        </li>
        <li><a href="#">OLED TVs</a>
        <ul>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
@@ -271,32 +271,32 @@
        </li>
        <li><a href="#">Curved TVs</a>
        <ul>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
@@ -305,27 +305,27 @@
        </li>
        <li><a href="#">Projectors & Screens</a>
        <ul>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
          </form>
-         <form  method="get"  action="TV.jsp" id="4kuhd10">
+         <form  method="get"  action="/java2/tv" id="4kuhd10">
            <li><a href="javascript:;" onclick="document.getElementById('4kuhd10').submit();">
              <%=tvdaoimpl.getByScreenSize("10").getTvscreensize()%>
              <input type="hidden" name="4kid10" value="10" /></a></li>
@@ -333,7 +333,7 @@
        </ul>
        </li>
        <li>
-         <form  method="get"  action="TV.jsp" id="4kuhd99">
+         <form  method="get"  action="/java2/tv" id="4kuhd99">
          <a href="javascript:;" onclick="document.getElementById('4kuhd99').submit();">See All Televisions</a>
          <input type="hidden" name="4kid99" value="99" />
          </form>

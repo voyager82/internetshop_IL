@@ -5,8 +5,8 @@
     <title>JSP page</title>
 </head>
 <body>
-
-    <h1><%=request.getAttribute("model")%></h1>
-
+    <img src ="image?imgID=<%=request.getAttribute("model")%>" width="115" border="0" ><br>
+    <img src ="image?imgID=<%=request.getAttribute("model")%>" width="115" border="0" ></br>
+    <img src ="image?imgID=<%=request.getAttribute("model")%>" width="115" border="0" >
 </body>
 </html>
