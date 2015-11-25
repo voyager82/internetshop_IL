@@ -1,11 +1,4 @@
 <%@ page import="java.util.HashMap" %>
-<%@ page import="java.io.OutputStream" %>
-<%@ page import="java.sql.SQLException" %>
-<%@ page import="internetshop.niva.il.database.DBException" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="internetshop.niva.il.database.jdbc.CartDAOImpl" %>
-<%@ page import="internetshop.niva.il.domain.Cart" %>
-<%@ page import="internetshop.niva.il.domain.TV" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page trimDirectiveWhitespaces="true" %>
@@ -63,31 +56,16 @@
         if (session.getAttribute("screenID") != null ) { %>
       <h2><%=session.getAttribute("parameter")%></h2>
 
-      <%/*
-          int ImageID;
-          Connection connection = null;
-          if (request.getParameter("imgID") != null ) {
-            try {
-              ImageID = Integer.parseInt(request.getParameter("imgID"));
-              byte[] imgData = tv.getImage(ImageID);
-              response.setContentType("image/jpeg");
-              OutputStream outputStream = response.getOutputStream();
-              outputStream.write(imgData);
-              response.getOutputStream().flush();
-              response.getOutputStream().close();
-              return;
-            } catch (Exception e) {
-              e.printStackTrace();
-            }
-        }
-   */   %>
 
       <!--Retrieve only selected TV products by screen size :-->
       <c:forEach items='${tv.get4KUHD(screenID)}' var="tv">
         <h4><c:out  value="${tv.tvid} ${tv.tvtype} ${tv.tvscreensize}  ${tv.tvebrand}  ${tv.tvdescription}  ${tv.tvprice}" /><!--<img src="images/cart.png">--></h4>
+
         <!--Draw image :-->
-        <img src ="tv?imgID=<%=request.getAttribute("model")%>" width="115" border="0" >
-      <!-- <a href="TV.jsp?imgID=${tv.tvid}" target="_blank"> <img src ="TV.jsp?imgID=${tv.tvid}" width="115" border="0" ></a> -->
+        <c:set var="tvidId" value="${tv.tvid}" scope="request"/>
+        <%request.setAttribute("model", request.getAttribute("tvidId"));%>
+      <a href="tv?imgID=${tvidId}" target="_blank"><img src ="tv?imgID=<%=request.getAttribute("model")%>" width="115" border="0" ></a>
+
         <form class="form-inline">
           <div class="checkbox">
            <!-- <label><input type="checkbox"></label> -->
